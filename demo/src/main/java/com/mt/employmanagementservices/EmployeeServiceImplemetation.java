@@ -7,8 +7,7 @@ import com.mt.employmanagementrepository.EmployeeRepository;
 import com.mt.employmanagementutil.Employee;
 
 public class EmployeeServiceImplemetation implements EmployeeServices {
-	@Autowired
-	private AddressRepository addressrepo;
+
 	@Autowired
 	private EmployeeRepository emprepository;
 
