@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tabs.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+</head>
+<body>
+
+    <div class="hero">
+        <div class="btn-box">
+            <button id="btn1" onclick="openHtml()"><i class="fa-brands fa-html5"></i>HTML</button>
+            <button id="btn2" onclick="openCss()"><i class="fa-brands fa-css3-alt"></i>CSS</button>
+            <button id="btn3" onclick="openJs()"><i class="fa-brands fa-js"></i>JAVASCRIPT</button>
+        </div>
+        <div id="content1" class="content">
+            <div class="content-left">
+
+                <h1>Learn HTML</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quo atque optio officiis voluptatum repudiandae quidem suscipit non deserunt maiores magnam accusamus voluptas, voluptate itaque quis eveniet enim beatae laboriosam!
+                </p>
+                <a href="#">WATCH VIDEO</a>
+
+            </div>
+            <div class="content-right">
+               <img src="https://html.com/wp-content/uploads/html-hpg-featured-new.png" alt="">
+
+            </div>
+        </div>
+        <div class="content" id="content2">
+            <div class="content-left">
+
+                <h1>Learn CSS</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quo atque optio officiis voluptatum repudiandae quidem suscipit non deserunt maiores magnam accusamus voluptas, voluptate itaque quis eveniet enim beatae laboriosam!
+                </p>
+                <a href="#">WATCH VIDEO</a>
+
+            </div>
+            <div class="content-right">
+               <img src="https://repository-images.githubusercontent.com/200002869/f70b1800-8587-11ea-9ec4-2e5d785fb723" alt="">
+
+            </div>
+        </div>
+        <div class="content" id="content3">
+            <div class="content-left">
+
+                <h1>Learn JAVASCRIPT</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quo atque optio officiis voluptatum repudiandae quidem suscipit non deserunt maiores magnam accusamus voluptas, voluptate itaque quis eveniet enim beatae laboriosam!
+                </p>
+                <a href="">WATCH VIDEO</a>
+
+            </div>
+            <div class="content-right">
+               <img src="https://www.w3docs.com/uploads/media/default/0001/05/4482fe09d95a0be765154b9cefff5e07f7fc32ff.png" alt="">
+
+            </div>
+        </div>
+    </div>
+
+<script>
+    var content1=document.getElementById("content1");
+var content2=document.getElementById("content2");
+var content3=document.getElementById("content3");
+
+var btn1=document.getElementById("btn1")
+var btn2=document.getElementById("btn2")
+var btn3=document.getElementById("btn3")
+
+function openHtml(){
+    content1.style.transform="translateX(0)";
+    content2.style.transform="translateX(100%)";
+    content3.style.transform="translateX(100%)";
+    btn1.style.color="#ff7846"
+    btn2.style.color="#000"
+    btn3.style.color="#000"
+}
+function openCss(){
+    content1.style.transform="translateX(100%)";
+    content2.style.transform="translateX(0)";
+    content3.style.transform="translateX(100%)";
+    btn2.style.color="#ff7846"
+    btn1.style.color="#000"
+    btn3.style.color="#000"
+}
+function openJs(){
+    content1.style.transform="translateX(100%)";
+    content2.style.transform="translateX(100%)";
+    content3.style.transform="translateX(0)";
+    btn3.style.color="#ff7846"
+    btn2.style.color="#000"
+    btn1.style.color="#000"
+}
+</script>
+    
+</body>
+</html>
